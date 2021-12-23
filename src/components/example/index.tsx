@@ -42,7 +42,7 @@ export const ExampleComponent = ({ text }: ExampleComponentProps) => {
   const {
     data: empathyData,
     error: empathyError,
-    isLoading: isLoadingEmpathy,
+    loading: loadingEmpathy,
   } = useEmpathy<any>(exampleEndpoint);
 
   useEffect(() => {
@@ -64,7 +64,7 @@ export const ExampleComponent = ({ text }: ExampleComponentProps) => {
         <b>Fetch: </b> {fetchedData ? fetchedData?.name : 'Loading...'}
       </div>
       <div>
-        <b>Empathy: </b> {!isLoadingEmpathy ? empathyData?.name : 'Loading...'}
+        <b>Empathy: </b> {!loadingEmpathy ? empathyData?.name : 'Loading...'}
       </div>
       <div
         style={{

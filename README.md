@@ -36,7 +36,7 @@ yarn add @ricardo-jrm/empathy
 ```ts
 import { useEmpathy } from '@ricardo-jrm/empathy';
 
-const { data, error, isLoading } = useEmpathy(endpoint);
+const { data, error, loading } = useEmpathy(endpoint);
 ```
 
 <br />

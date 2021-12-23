@@ -20,7 +20,7 @@ export type UseEmpathyProps = string;
 export type UseEmpathyType<T> = {
   data: T | undefined;
   error: any | undefined;
-  isLoading: boolean;
+  loading: boolean;
 };
 
 /**
@@ -37,6 +37,6 @@ export const useEmpathy = <T>(endpoint: UseEmpathyProps): UseEmpathyType<T> => {
   return {
     data,
     error,
-    isLoading: !error && !data,
+    loading: !error && !data,
   };
 };
