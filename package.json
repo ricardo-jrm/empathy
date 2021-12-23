@@ -1,7 +1,7 @@
 {
   "name": "@ricardo-jrm/empathy",
   "description": "React API client",
-  "version": "0.0.0-development",
+  "version": "0.0.1-development",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
