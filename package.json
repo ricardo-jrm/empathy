@@ -94,8 +94,10 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "swr": "^1.1.1"
   },
   "peerDependencies": {
     "react": "^17.0.2",

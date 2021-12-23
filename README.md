@@ -21,57 +21,6 @@
 
 <br />
 
-### <b>Bootstrap</b>
-
-```ts
-npx @ricardo-jrm/empathy
-```
-
-Boilerplate `React` project bootstrapped with all necessary configs and workflows
-
-<br />
-
-### <b>Workflows</b>
-
-Quality Assurance
-
-- Will lint code and run tests
-- Runs on `pull_request` sync and `push` to `main`
-
-Release
-
-- Will create a GitHub release with auto generated versioning and changelog
-- Will publish the package to the public NPM registry
-- Runs on `push` to `main` and after the QA job
-
-Publish to GitHub (Public)
-
-- Will publish the package to the public GitHub registry
-- Runs on `workflow_dispatch`
-
-<br />
-
-### <b>Dev Dependencies</b>
-
-- `React`
-- `Typescript`
-- `Prettier`
-- `ESLint`
-- `Commit Lint`
-- `Lint Staged`
-- `Husky`
-- `Jest`
-- `React Testing Library`
-- `Storybook`
-- `Webpack`
-- `Semantic Release`
-
-<br />
-
----
-
-<br />
-
 ### <b>Install</b>
 
 ```ts
@@ -85,24 +34,9 @@ yarn add @ricardo-jrm/empathy
 ### <b>Usage</b>
 
 ```ts
-// hook
-import { useExampleHook, ExampleHookType } from '@ricardo-jrm/empathy';
+import { useEmpathy } from '@ricardo-jrm/empathy';
 
-// context
-import {
-  ExampleContext,
-  useExampleContext,
-  ExampleContextType,
-} from '@ricardo-jrm/empathy';
-
-// component
-import {
-  ExampleComponent,
-  ExampleComponentProps,
-} from '@ricardo-jrm/empathy';
-
-// provider
-import { ExampleProvider, ExampleProviderProps } from '@ricardo-jrm/empathy';
+const { data, error, isLoading } = useEmpathy(endpoint);
 ```
 
 <br />
