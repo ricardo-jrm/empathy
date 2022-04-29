@@ -2,7 +2,6 @@ name: Publish Github (Public)
 
 on:
   workflow_dispatch:
-    branches: [main]
 
 jobs:
   publish-public:
@@ -14,13 +13,13 @@ jobs:
         with:
           node-version: '16'
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@${{ secrets.NPM_OWNER }}'
+          scope: '@${{ secrets.NAMESPACE }}'
 
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: Config Name
-        run: git config user.name ${{ secrets.GH_CONFIG_NAME }}
+        run: git config user.name ${{ secrets.NAMESPACE }}
 
       - name: Config Email
         run: git config user.email ${{ secrets.GH_CONFIG_EMAIL }}

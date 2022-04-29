@@ -1,21 +1,21 @@
 {
-  "name": "@ricardo-jrm/empathy",
+  "name": "@ricardojrmcom/empathy",
   "description": "React API client",
-  "version": "0.0.1-development",
+  "version": "0.0.2-development",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/ricardo-jrm/empathy.git"
+    "url": "https://github.com/ricardojrmcom/empathy.git"
   },
   "author": {
     "name": "Ricardo Mota",
-    "url": "https://github.com/ricardo-jrm"
+    "url": "https://github.com/ricardojrmcom"
   },
-  "homepage": "https://github.com/ricardo-jrm/empathy#readme",
+  "homepage": "https://github.com/ricardojrmcom/empathy#readme",
   "bugs": {
-    "url": "https://github.com/ricardo-jrm/empathy/issues"
+    "url": "https://github.com/ricardojrmcom/empathy/issues"
   },
   "license": "MIT",
   "keywords": [
